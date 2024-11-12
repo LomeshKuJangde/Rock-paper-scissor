@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+body {
+    background-color: #f4f7f6; /* Light neutral background */
+    color: #333;
+}
+
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg, #0a2848, #07152a); /* Gradient for a modern touch */
+}
+
+.choice:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+img {
+    height: 140px; /* Slightly smaller for better fit */
+    width: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+    background-color: #f0f4f8; /* Slight contrast background */
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+    color: #081b31;
+    font-weight: bold;
+}
+
+.msg-container {
+    margin-top: 5rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    animation: fadeIn 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#resetbtn {
+    margin-top: 3rem;
+}
+
+#restart {
+    background-color: #4CAF50; /* Bright and engaging */
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#restart:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+.choice:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
